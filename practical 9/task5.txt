@@ -1,0 +1,6 @@
+differences between class and struct are :
+By default, all the members of the structure are public.But by default all members of the class are private.
+The structure will automatically initialize its members. In contrast, constructors and destructors are used to initialize the class members.
+When a structure is implemented, memory allocates on a stack. In contrast, memory is allocated on the heap in class.
+Variables in a structure cannot be initialized during the declaration, but they can be done in a class.
+A structure is a value type, while a class is a reference type.
