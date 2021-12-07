@@ -40,6 +40,6 @@ int main()
 	d.display1();
 	d.display2();
 	d.display3();
-	//d.display();
+	//d.display();//this function cannot be executed because ,compiler gets confused between class B and C copy of class A
 	d.k=100;
 }
