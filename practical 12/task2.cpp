@@ -8,6 +8,10 @@ class A
 	{
 		k=y;
 	}
+	~A()
+	{
+		cout<<"destructor of class A"<<endl;
+	}
 };
 class B:public A
 {
@@ -21,6 +25,10 @@ class B:public A
 	{
 		cout<<"class A :: k== "<<A::k<<endl;
 		cout<<"class B :: k== "<<this->k<<endl;
+	}
+	~B()
+	{
+		cout<<"destructor of class B"<<endl;
 	}
 };
 class C:public B
@@ -36,10 +44,15 @@ class C:public B
 		put1();
 		cout<<"class C :: r== "<<this->r<<endl;
 	}
+	~C()
+	{
+		cout<<"destructor of class C"<<endl;
+	}
 };
 int main()
 {
 	C obj(5);
 	obj.put2();
+	cout<<"running destructors"<<endl;
 }
 		
