@@ -1,0 +1,5 @@
+16.2) b) default exception 
+        this is because the program is throwing a char while catch statement is taking a int , so defualt statement runs.
+      c)the program terminates as catch statement takes int but prg is throwing a char so the program terminates after
+      throwing instance.
+      
